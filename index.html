@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="BMI.css">
+</head>
+<body>
+<h1>Body Mass Index Calculator</h1>
+
+<form onsubmit="return false">
+    <label for="height">Height(Inches):</label>
+    <input type="number" min="56" max="79" id="height" name="height" required>
+    <label for="weight">Weight(Pounds):</label>
+    <input type="number" min="80" max="275" id="weight" name="weight" required>
+    <input type="submit" value="Calculate" onclick="Check()">
+</form>
+
+<p id="resultBMI">BMI: </p>
+<p id="resultCatBMI">Category: </p>
+
+<span id="chart"></span>
+
+<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script defer src="code.js"></script>
+
+</body>
+</html>
